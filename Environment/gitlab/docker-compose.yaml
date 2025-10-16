@@ -1,8 +1,12 @@
 services:
   gitlab:
-    # image: gitlab/gitlab-ee:<version>-ee.0
+    
+    # Installa enterprice edition (evaluate)
     image: gitlab/gitlab-ee:nightly
+
+    # Installa community edition
     # image: gitlab/gitlab-ce:nightly
+    
     container_name: gitlab
     restart: always
     hostname: 'gitlab.corso.local'
